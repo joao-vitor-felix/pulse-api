@@ -1,0 +1,40 @@
+{
+  "name": "pulse-api",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "lint:check": "prettier --check src && eslint src --max-warnings=0",
+    "lint:fix": "prettier --write src && eslint src --fix",
+    "typecheck": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "test:ci": "vitest run --coverage",
+    "prepare": "husky"
+  },
+  "engines": {
+    "node": ">=22.14",
+    "pnpm": ">=10.14"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@eslint/js": "^9.32.0",
+    "@types/node": "^24.2.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/ui": "^3.2.4",
+    "eslint": "^9.32.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.4",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.39.0",
+    "vitest": "^3.2.4"
+  }
+}
