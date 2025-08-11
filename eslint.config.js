@@ -1,6 +1,7 @@
 // @ts-check
 
 import eslint from "@eslint/js";
+import eslintConfigPrettier from "eslint-config-prettier/flat";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import tseslint from "typescript-eslint";
 
@@ -16,5 +17,6 @@ export default tseslint.config(
       "simple-import-sort/imports": "error",
       "simple-import-sort/exports": "error"
     }
-  }
+  },
+  eslintConfigPrettier
 );
