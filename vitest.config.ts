@@ -7,7 +7,10 @@ export default defineConfig({
     globals: true,
     silent: true,
     passWithNoTests: true,
-    include: ["**/*.test.ts"]
+    include: ["**/*.test.ts"],
+    coverage: {
+      include: ["src/**/*.ts"],
+    }
   },
   resolve: {
     alias: {
